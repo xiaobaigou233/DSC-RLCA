@@ -1,0 +1,7 @@
+gym==0.18.0
+matplotlib==3.5.3
+numpy==1.21.6
+parl==2.0.5
+scipy==1.7.3
+tensorboardX==1.8
+
