@@ -2,13 +2,13 @@
 一种基于强化学习的密集速度受限的多无人机分布式碰撞避免算法
 ## 效果展示
 多机不同速度汇聚场景
-![多机不同速度汇聚](pic\img_rl_diff_speed.gif)
+![多机不同速度汇聚](https://github.com/xiaobaigou233/DSC-RLCA/blob/main/pic/img_rl_diff_speed.gif)
 
 多机随机场景
-![多机随机场景](pic\img_rl_random.gif)
+![多机随机场景](https://github.com/xiaobaigou233/DSC-RLCA/blob/main/pic/img_rl_random.gif)
 
 非合作无人机场景
-![非合作无人机场景](pic\img_rl_circle_cross.gif)
+![非合作无人机场景](https://github.com/xiaobaigou233/DSC-RLCA/blob/main/pic/img_rl_circle_cross.gif)
 ## 1.安装依赖库
 依赖库详情在requestment文件，在终端输入以下指令安装依赖。
 >pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/
