@@ -1,7 +1,5 @@
 import paddle
 import numpy as np
-import math
-import time
 
 from Path_planning import Plan
 from plot2DEnv import plot2DEnv
@@ -37,10 +35,6 @@ def run_evaluate_episodes(model, env, eval_episodes):
                 action[i],_,_,_,_ = agents[i].action(obs[i],np.delete(obs,i,axis=0),action_type = "predict")
                 # end = time.time()
                 # print("cal_time",end - start)
-            # action[1] = np.zeros(2)       #不合作飞机
-            # action[3] = np.zeros(2)       #不合作飞机
-            # action[5] = np.zeros(2)       #不合作飞机
-            # action[7] = np.zeros(2)       #不合作飞机
             obs, _, done,  _ = env.step(action)
 
             if episode_steps >= 200:
@@ -48,8 +42,7 @@ def run_evaluate_episodes(model, env, eval_episodes):
 
         env.close()
         
-        # data_save_path ='D:\HANJIALE\code\ORCA1\\agent_orca\paper_data\\traj\data_rl_fixed_random.csv'
-        # # data_save_path = f'D:\\HANJIALE\\code\\ORCA1\\agent_orca\\data_statistics\\RL_circle_8\\data_rl_{eps}.csv'
+        # data_save_path ='D:\data_rl_fixed_random.csv'
         # env.data_save(data_save_path)     #保存数据
         
 
